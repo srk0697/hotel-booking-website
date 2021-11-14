@@ -1,4 +1,29 @@
-#img1,#img2,#img3{
+body{
+    margin:0px;
+    background-color: #e0e0e0;
+}
+#text{
+    background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 380px;
+}
+header{
+    background-color: rosybrown;
+}
+footer{
+    background-color: rosybrown;
+   
+    
+}
+#list-view{
+    margin: 2%;
+}
+.img-container{ 
+    background-color: rgb(132, 136, 139);
+    width: 40%;
+}
+.img1,.img2,.img3{
     height: 200px;
     width: 250px;
 }
