@@ -11,16 +11,14 @@
 </head>
 <body>
   <div id="main-container">
-  <header>
-    <div id="Header ">
-        <img src="assests/images/logo.png" style="height: 60px; width: 60px;" alt="logo">
-        <a href="login.html">Login</a>
-    </div>
-  </header>
+    <header>
+      <img src="assests/images/logo.png" id="logo" style="height: 60px; width: 60px;" alt="logo">
+      <a href="login.html" id="login" >Login</a>
+    </header>
   <section>
     <div id="Content">
       <div id="text">
-        <input type="text" placeholder="City"><br>
+        <input id="search-bar-input" type="text" placeholder="City"><br>
       </div>
       <div class="images">
         <a href="list.html"><img id="img1" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" height="150px" width="150px" alt="delhi"></a>
@@ -29,16 +27,20 @@
       <img id="img4" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" height="150px" width="150px" alt="Kolkata"><br>
       
       </div>
-      <a href="#">View more>></a>
-    </div>
+      <div id="view-more">
+        <a href="#">View more>></a>
+      </div>
   </section>
   <footer>
-    <a href="contact.html">Contact Us</a>
-        <br />
-        <a href="https:/www.facebook.com" target="_blank"><img src="assests\images\facebook.png" class="social-media"alt="Facebook"/></a>
-        <a href="https:/www.instagram.com" target="_blank"><img src="assests\images\instagram.png"class="social-media"alt="Instagram"/></a>
-        <a href="https:/www.twitter.com" target="_blank"><img src="assests\images\twitter.png"class="social-media"alt="Twitter"/></a>
-        <div>&copy; 2020 ROOM SEARCH PVT. LTD.</div>
+    <section id="contact-us">
+      <a href="contact.html">Contact Us</a>
+    </section>
+    <section id="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</section>
+    <section id="social-media-container">
+      <a href="https:/www.facebook.com" target="_blank"><img src="assests\images\facebook.png"class="social-media"alt="Facebook"/></a>
+      <a href="https:/www.instagram.com" target="_blank"><img src="assests\images\instagram.png"class="social-media"alt="Instagram"/></a>
+      <a href="https:/www.twitter.com" target="_blank"><img src="assests\images\twitter.png"class="social-media"alt="Twitter"/></a>
+    </section>
      </footer>
 </div>
   </body>
