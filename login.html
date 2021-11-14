@@ -8,7 +8,20 @@
 </head>
 <body>
     <div>
-        <p>LOGIN</p>
+        <form autocomplete="off" method="get"> 
+            <div class="Username">
+            <label>Username:</label>
+            <input type="text" name="username" placeholder="Enter Username"  required="required">
+             </div>
+            <div class="Password">
+                <label>Password</label>
+              <input type="password" name="password" placeholder="Enter Password" required="required">
+            </div>
+            <div class="submit login">
+            <button type="submit" formaction="index.html">
+                Submit</button>
+            </div>
+          </form>
     </div>
 </body>
 </html>
