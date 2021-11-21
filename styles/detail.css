@@ -1,77 +1,60 @@
-.hotel-image-detail {
-  width: 500px;
-  height: 500px;
-  margin-top: 2%;
-  margin-left: 4%;
-  margin-right: 4%;
-  max-height: 350px;
-  margin: 2% 4%;
-  }
-  
-  form {
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-bottom: 1%;
-  }
+
   #details-container {
-    box-sizing: border-box;
     height: 400px;
-    margin: 2.5% 2% 1% 2%;
+    margin: 2% 1% 2% 1%;
     display: flex;
-    flex-direction: row;
-    border: 1px solid black;
-  }
-  
-  #image-div {
-    width: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #form {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    border-left: 1px solid black;
+    justify-content: start;
     align-content: center;
-    max-height: 400px;
-    box-sizing: border-box;
   }
-  form .btn {
-    width: 100px;
-    height: 35px;
-    padding: 3%;
-    margin-left: 34%;
-  
-    margin-left: 38%;
-    margin-top: 8%;
-    transition: none;
-  }
-  
   #hotel-description {
     margin: 1% 4% 2%;
   }
-  
-  input {
-    width: 60%;
-    margin-left: 10%;
+  #carousel-form-container,#detail-form {
+    padding: 1%;
+    text-align: center;
+    border: 1px solid black;
+    max-height: 400px;
   }
-  
-  .form-input {
+  #carousel-form-container {
+    margin-left: 2%;
+    border-right: none;
+    flex-grow: 3;
+    max-width: 60%;
+  }
+  #detail-form {
+    margin-right: 2%;
+    flex-grow: 1;
+  }
+  #book-now {
+    margin-top: 1%;
+  }
+  .carousel-image {
+    max-height: 350px;
+  }
+  .form-input  {
+    padding: 2.5%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin: 5%;
-    margin-bottom: 2.5%;
   }
-  
   .headings {
     font-family: cursive;
-    font-weight: bold;
+    /* font-weight: bold; */
   }
-  
+  .inputs {
+    width: 60%;
+    padding: 2%;
+    margin: 5%;
+  }
+  .carousel-control-prev-icon,.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    background-image: none;
+  }
+  .carousel-control-next-icon:after {
+    content: ">";
+    font-size: 55px;
+    color: rosybrown;
+  }
   #book-now-button {
     width: 170px;
     height: 50px;
@@ -79,9 +62,33 @@
     margin: 15%;
     margin-left: 34%;
   }
-  .btn-success {
-    color: #28a745;
-    background-color: #e0e0e0;
-    border-color: #28a745;
+  @media only screen and (max-width: 600px) {
+    #hotel-description p {
+      width: 200%;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    #details-container {
+      margin: 2% 1% 2% 1%;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: start;
+      align-content: center;
+    }
+  
+    #carousel-form-container {
+      margin-left: 2%;
+      border-right: 1px solid black;
+      border-bottom: none;
+      /* flex-grow: 3; */
+      max-width: 95%;
+      padding: 1%;
+    }
+  
+    #book-now {
+      margin-bottom: 2%;
+    }
   }
   
