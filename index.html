@@ -13,10 +13,10 @@
 </head>
 <body>
   <div id="main-container">
-  <header>
-        <img src="assests/images/logo.png" id="logo" style="height: 60px; width: 60px;" alt="logo">
-        <!-- <a href="login.html" id="login" >Login</a> -->
-        <button id="login-btn" type="button" class="btn btn-light" data-toggle="modal" data-target="#loginModal">LOGIN</button>
+  <header id="header">
+        <!-- <img src="assests/images/logo.png" id="logo" style="height: 60px; width: 60px;" alt="logo"> 
+         <a href="login.html" id="login" >Login</a>
+       <button id="login-btn" type="button" class="btn btn-light" data-toggle="modal" data-target="#loginModal">LOGIN</button> -->
   </header>
   <section id="content-container">
     <div id="Content">
@@ -50,7 +50,7 @@
         </div>
       </section>
   </section>
-  <secction class="images">
+  <secction class="images" id="images2" data-value="view-more">
     <div class="city-img">
       <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg" height="150px" width="150px" alt="Chennai">
       <div class="city-name-div">
@@ -78,30 +78,30 @@
   </secction>
   <div id="view-more">
     <!-- <a href="index.html">View more>></a> -->
-    <a href="index.html" class="btn btn-secondary">View more</a>
+    <button id="view-more-btn" class="btn btn-secondary">View More</button>
   </div>
-  <footer>
-    <section id="contact-us">
+  <footer id="footer">
+    <!-- <section id="contact-us"> -->
       <!-- <a href="contact.html">Contact Us</a> -->
-      <button id="contact-btn" type="button" class="btn btn-info" data-toggle="modal" data-target="#contactModal">Contact Us</button>
-    </section>
-    <section id="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</section>
+      <!-- <button id="contact-btn" type="button" class="btn btn-info" data-toggle="modal" data-target="#contactModal">Contact Us</button> -->
+    <!-- </section> -->
+    <!-- <section id="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</section>
     <section id="social-media-container">
       <a href="https:/www.facebook.com" target="_blank"><img src="assests\images\facebook.png"class="social-media"alt="Facebook"/></a>
       <a href="https:/www.instagram.com" target="_blank"><img src="assests\images\instagram.png"class="social-media"alt="Instagram"/></a>
       <a href="https:/www.twitter.com" target="_blank"><img src="assests\images\twitter.png"class="social-media"alt="Twitter"/></a>
-    </section>
+    </section> -->
      </footer>
-      <!-- login modal -->
-      <div
+      login modal -->
+      <!-- <div
         class="modal"
         id="loginModal"
         tabindex="-1"
         role="dialog"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
-      >
-        <div class="modal-dialog" role="document">
+      > -->
+        <!-- <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
@@ -110,8 +110,8 @@
                 class="close"
                 data-dismiss="modal"
                 aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
+              > -->
+                <!-- <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
@@ -122,19 +122,19 @@
                 </div>
                 <div class="input-container">
                   <label for="password">Password:</label>
-                  <input type="password" name="password" id="password" placeholder="Enter Password" autocomplete="off"required/>
+                  <input type="password" name="password" id="password" placeholder="Enter Password" required/>
                 </div>
-              </form>
-            </div>
+              </form> -->
+            <!-- </div>
             <div class="modal-footer">
-              <input type="submit" class="btn btn-primary" value="Login" />
+              <button id="login-button" type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
             </div>
           </div>
         </div>
-      </div>
+      </div> --> 
 
       <!-- contact modal -->
-      <div
+       <!-- <div
         class="modal"
         id="contactModal"
         tabindex="-1"
@@ -159,16 +159,18 @@
                   <input type="email" name="useremail" id="useremail" placeholder="Enter your email id" required/>
                 </div>
               </form>
-            </div>
-            <div id="modal-footer-2" class="modal-footer">
+            </div> -->
+            <!-- <div id="modal-footer-2" class="modal-footer">
               <input type="submit" class="btn btn-primary" value="Submit" />
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script type="module" src="scripts/index.js"></script>
+    <script type="module" src="scripts/common.js"></script>
   </body>
 </html>
 </div>

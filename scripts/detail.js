@@ -1,3 +1,5 @@
+let form1 = document.getElementById("form");
+let adult, nameOfCus, fromDate, toDate, totalPrice, priceToDisplay;
 var calculateTotalPrice = function () {
   let form = document.getElementById("form");
   let adult = document.getElementById("adult").value;
@@ -24,4 +26,32 @@ var calculateTotalPrice = function () {
   }
 };
 
-form.addEventListener("input", calculateTotalPrice);
+form1.addEventListener("input", calculateTotalPrice);
+const rating = async function (rating) {
+  let ratingVal = Number.parseFloat(rating) * 10;
+  let rem = ratingVal % 10;
+  let quotient = Math.floor(ratingVal / 10);
+  let ratingHtml = "";
+  let html = `<span class="fa fa-star checked"></span>`;
+  for (let i = 0; i < quotient; i++) {
+    ratingHtml = ratingHtml + html;
+  }
+  if (rem !== 0) {
+    ratingHtml += `<span class="fa fa-star-half-o checked"></span>`;
+  }
+  return ratingHtml;
+};
+
+const amenities = async function (amenitiesObj) {
+  let html = "";
+  let key = "";
+  let replacedKey = "";
+  let finalKey = "";
+  for (let y = 0; y < 10; y++) {
+    key = amenitiesObj[y].key;
+    replacedKey = key.replaceAll("_", " ");
+    finalKey = replacedKey[0].toUpperCase() + replacedKey.slice(1);
+    html = html + `<li>${finalKey}</li>`;
+  }
+  return html;
+};
